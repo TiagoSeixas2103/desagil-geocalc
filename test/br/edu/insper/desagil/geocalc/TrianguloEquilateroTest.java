@@ -9,7 +9,7 @@ class TrianguloEquilateroTest {
 
 	@Test
 	void test() {
-		Poligono poligono = new TrianguloEquilatero(5);
+		Poligono poligono = new TrianguloEquilatero(5, 3);
 		assertEquals(15.0, poligono.perimetro(), DELTA);
 		assertEquals(10.83, poligono.area(), DELTA);
 	}

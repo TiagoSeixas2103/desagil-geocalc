@@ -9,7 +9,7 @@ class HexagonoRegularTest {
 
 	@Test
 	void test() {
-		Poligono poligono = new HexagonoRegular(5);
+		Poligono poligono = new HexagonoRegular(5, 6);
 		assertEquals(30.0, poligono.perimetro(), DELTA);
 		assertEquals(64.95, poligono.area(), DELTA);
 	}

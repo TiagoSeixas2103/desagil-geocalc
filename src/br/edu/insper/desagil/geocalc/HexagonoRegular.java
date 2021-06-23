@@ -1,15 +1,9 @@
 package br.edu.insper.desagil.geocalc;
 
-public class HexagonoRegular extends Poligono {
-	private int lado;
+public class HexagonoRegular extends PoligonoRegular {
 
-	public HexagonoRegular(int lado) {
-		this.lado = lado;
-	}
-
-	@Override
-	public double perimetro() {
-		return 6 * this.lado;
+	public HexagonoRegular(int lado, int numeroLados) {
+		super(lado, numeroLados);
 	}
 
 	@Override
@@ -18,6 +12,6 @@ public class HexagonoRegular extends Poligono {
 
 		double altura = Math.sqrt(this.lado * this.lado - meio * meio);
 
-		return 6 * this.lado * altura / 2;
+		return numeroLados * this.lado * altura / 2;
 	}
 }

@@ -1,15 +1,9 @@
 package br.edu.insper.desagil.geocalc;
 
-public class TrianguloEquilatero extends Triangulo {
-	private int lado;
+public class TrianguloEquilatero extends PoligonoRegular {
 
-	public TrianguloEquilatero(int lado) {
-		this.lado = lado;
-	}
-
-	@Override
-	public double perimetro() {
-		return 3 * this.lado;
+	public TrianguloEquilatero(int lado, int numeroLados) {
+		super(lado, numeroLados);
 	}
 
 	@Override

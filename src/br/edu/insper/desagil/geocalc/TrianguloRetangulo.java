@@ -1,6 +1,6 @@
 package br.edu.insper.desagil.geocalc;
 
-public class TrianguloRetangulo extends Triangulo {
+public class TrianguloRetangulo extends Poligono {
 	private int cateto1;
 	private int cateto2;
 
